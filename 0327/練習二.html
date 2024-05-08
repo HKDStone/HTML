@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: blue;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table,tr,th,td{
+            border: 1px black solid;
+        }
+        table{
+            background: yellow;
+            text-align: center;
+            width: 250px;
+            height: 220px;
+        }
+        h2{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h2>11210301的課表</h2>
+        <tbody>
+            <tr>
+                <td></td>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+            </tr>
+            <tr>
+                <th>第一節</th>
+                <td colspan="2">程式設計</td>
+                <td rowspan="2">計概</td>
+            </tr>
+            <tr>
+                <th>第二節</th>
+                <td rowspan="2">班會</td>
+                <td rowspan="2">Linux</td>
+            </tr>
+            <tr>
+                <th>第三節</th>
+                <td rowspan="2">網路</td>
+            </tr>
+            <tr>
+                <th>第四節</th>
+                <td colspan="2">統計</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

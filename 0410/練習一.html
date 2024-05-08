@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 450px;
+            /* height: 290px; */
+            border-radius: 5px;
+            border: 2px black solid;
+        }
+        h2{
+            text-align: center;
+            margin: 10px 0;
+        }
+        p{
+            line-height: 3;
+            margin-left: 40px;
+        }
+        .btn{
+            width: 40%;
+            border-radius: 5px;
+        }
+        .btn-group{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .input{
+            border-radius: 5px;
+        }
+        .btn + .btn{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>行動電話使用調查表</h2>
+        <form action="https://www.w3schools.com/action_page.php">
+            <p>姓&nbsp;&nbsp;名：<input class="input" type="text" name="username" size="40" required></p>
+            <p>Email：<input class="input" type="email" name="email" size="40" placeholder="username@mailserver" required></p>
+            <p>年&nbsp;&nbsp;齡：
+                <input type="radio" name="userage" value="A1"           >未滿20歲
+                <input type="radio" name="userage" value="A2" checked   >20~29
+                <input type="radio" name="userage" value="A3"           >30~39
+                <input type="radio" name="userage" value="A4"           >40↑
+            </p>
+            <p>您使用過廠牌的手機
+                <input type="checkbox" name="userPhone[]" value="Apple" checked>Apple
+                <input type="checkbox" name="userPhone[]" value="HTC">HTC
+                <input type="checkbox" name="userPhone[]" value="XiaoMi">XiaoMi
+            </p>
+            <p>常見問題<br>
+                <textarea name="q" cols="30" rows="4">電池有問題
+                </textarea>
+            </p>
+            <p>電信商
+                <select name="userNumber[]" size="5" multiple>
+                    <option value="中華電信">中華電信</option>
+                    <option value="台灣大哥大">台灣大哥大</option>
+                    <option value="遠傳">遠傳</option>
+                    <option value="亞太電信">亞太電信</option>
+                    <option value="台灣之星">台灣之星</option>
+                </select>
+            </p>
+            <div class="btn-group">
+                <input class="btn" type="submit">
+                <input class="btn" type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

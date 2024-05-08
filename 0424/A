@@ -1,0 +1,4 @@
+acme.sh --install-cert -d dns.hk-d.org \
+--cert-file      /root/.acme.sh/dns.hk-d.org_ecc/dns.hk-d.org.cer  \
+--key-file       /root/.acme.sh/dns.hk-d.org_ecc/dns.hk-d.org.key  \
+--fullchain-file /root/.acme.sh/dns.hk-d.org_ecc/fullchain.cer \

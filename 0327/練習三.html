@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "標楷體";
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table,th,td{
+            border: 2px gray solid;
+            border-collapse:collapse;
+        }
+
+        h1{
+            margin-top: 10px;
+        }
+        table{
+            margin-top: 10px;
+            width: 520px;
+        }
+        thead, tfoot{
+            background-color: lightpink;
+        }
+        td{
+            width: 80px;
+        }
+        tr td{
+            text-align: center;
+        }
+        /* .even{
+            background: #cdcdcd !important; 
+        } */
+    </style>
+</head>
+<body>
+    <h1>資一C課表</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>節次</th>
+                <th>時間</th>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>8:20<br>|<br>9:10</td>
+                <td></td>
+                <td rowspan="2">資訊數學(下)</td>
+                <td></td>
+                <td colspan="2">休息</td>
+                
+            </tr>
+            <tr class="even">
+                <td>2</td>
+                <td>9:20<br>|<br>10:10</td>
+                <td></td>
+                <!-- <td>資訊數學(下)</td> -->
+                <td></td>
+                <td rowspan="3">程式設計</td>
+                <td rowspan="3">英文</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>10:20<br>|<br>11:10</td>
+                <td></td>
+                <td rowspan="2">企業網路</td>
+                <td></td>
+                <!-- <td>程式設計</td> -->
+                <!-- <td>英文</td> -->
+            </tr>
+            <tr class="even">
+                <td>4</td>
+                <td>11:20<br>|<br>12:10</td>
+                <td></td>
+                <!-- <td>企業網路</td> -->
+                <td></td>
+                <!-- <td>程式設計</td> -->
+                <!-- <td>英文</td> -->
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>12:20<br>|<br>13:10</td>
+                <td>環境服務教育</td>
+                <td></td>
+                <td>動態網頁設計</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">致理科大</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
