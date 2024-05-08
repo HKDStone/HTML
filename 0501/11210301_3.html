@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11210301</title>
+    <style>
+        #id1 ~ p{
+            margin: 1cm 0.5cm; padding: 0.5cm 1cm;
+        }
+        li{
+            list-style-type: none;
+            width: 100px;
+            background: cyan;
+            text-align: center;
+         /* 顯示方式 在一行用Block方式顯示 */
+            display: inline-block;
+        }
+        li a{
+            /* 取消連結底線 */
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+          <!-- ps 邊界會保留最大的值 -->
+          <!-- 例：A的邊界是5px，B的邊界是9px -->
+          <!-- 邊界只會保留 9px 而不是 14px -->
+          <!-- 邊界   上下  左右 -->
+    <p style="margin: 1cm 0.5cm;">
+        視訊可以充分協助您證明論點。按一下 [線上影片]，即可貼上您要新增之視訊的內嵌程式碼。您也可以輸入關鍵字，在線上搜尋最適合您的文件使用的視訊。
+        Word 提供頁首、頁尾、封面和文字方塊設計，彼此互補，讓文件外觀更顯專業。例如，您可以新增相符的封面、頁首和資訊看板。按一下 [插入]，然後從其他圖庫選擇所要元素。
+        佈景主題和樣式也有助於保持文件一致。按下 [設計] 並選擇新的佈景主題後，圖片、圖表和 SmartArt 圖形即會配合新的佈景主題而變更。套用樣式時，標題會配合新的佈景主題加以變更。
+    </p>
+                                     <!-- 留白：內容到框線的距離 -->
+    <p id="id1" style="margin: 1cm 0.5cm; padding: 0.5cm 1cm;">
+        Word 的新按鈕可以在您需要時隨時顯示，藉此節省時間。若要變更配合文件調整圖片大小的方式，請按一下該圖片，圖片旁便會出現版面配置選項按鈕。處理表格時，可以按一下要新增欄或列的位置，然後按一下加號。
+        使用新的閱讀檢視，閱讀起來也更加輕鬆簡單。您可以摺疊文件的某些部分，以強調所要文字。若要在中途停止閱讀，Word 會記住您離開的位置 (即使是在另一部裝置也可行)。
+    </p>
+             <!--框線  樣式    顏色  大小 -->         <!--圓角-->
+    <p style="border: solid black 4px;        border-radius: 10px;">
+        視訊可以充分協助您證明論點。按一下 [線上影片]，即可貼上您要新增之視訊的內嵌程式碼。您也可以輸入關鍵字，在線上搜尋最適合您的文件使用的視訊。
+        Word 提供頁首、頁尾、封面和文字方塊設計，彼此互補，讓文件外觀更顯專業。例如，您可以新增相符的封面、頁首和資訊看板。按一下 [插入]，然後從其他圖庫選擇所要元素。
+    </p>
+               <!-- 樣式     上下   左右          顏色         同前                寬度   細    粗 -->
+    <p style="border-style: dotted solid; border-color: blue orange; border-width: thin thick;">
+        佈景主題和樣式也有助於保持文件一致。按下 [設計] 並選擇新的佈景主題後，圖片、圖表和 SmartArt 圖形即會配合新的佈景主題而變更。套用樣式時，標題會配合新的佈景主題加以變更。
+        Word 的新按鈕可以在您需要時隨時顯示，藉此節省時間。若要變更配合文件調整圖片大小的方式，請按一下該圖片，圖片旁便會出現版面配置選項按鈕。處理表格時，可以按一下要新增欄或列的位置，然後按一下加號。
+        使用新的閱讀檢視，閱讀起來也更加輕鬆簡單。您可以摺疊文件的某些部分，以強調所要文字。若要在中途停止閱讀，Word 會記住您離開的位置 (即使是在另一部裝置也可行)。
+    </p>
+
+    <p style="text-align: center;border: solid blue 2px;
+        /* 這邊是在介紹 長寬設定 請自行設定 */
+             width: 500px ;height: 50px;
+        /* 溢出設定(visible,hidden,scroll,auto,clip) */
+             overflow: auto;">
+        佈景主題和樣式也有助於保持文件一致。按下 [設計] 並選擇新的佈景主題後，圖片、圖表和 SmartArt 圖形即會配合新的佈景主題而變更。套用樣式時，標題會配合新的佈景主題加以變更。 Word 的新按鈕可以在您需要時隨時顯示，藉此節省時間。若要變更配合文件調整圖片大小的方式，請按一下該圖片，圖片旁便會出現版面配置選項按鈕。處理表格時，可以按一下要新增欄或列的位置，然後按一下加號。 使用新的閱讀檢視，
+    </p>
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.chihlee.edu.tw">ChihLee</a></li>
+        <li><a href="https://tw.yahoo.com">Yahoo</a></li>
+    </ul>
+</body>
+</html>
