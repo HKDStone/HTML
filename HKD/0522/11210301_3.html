@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="drinks" border="1">
+
+    </table>
+    <br>
+    <table id="scores" border="1">
+
+    </table>
+    <br>
+    <script>
+        for(let i = 1; i <= 6; i++) document.write(Math.ceil(Math.random()*38) + " ")
+        document.write(Math.ceil(Math.random()*8))
+
+        var dt = new Date;
+        document.write("<br>" + dt)
+        document.write(`<br> ${dt.getMonth()+1}/${dt.getDate()}/${dt.getFullYear()}`)
+
+        var drinks = ['卡布奇諾咖啡', '拿鐵咖啡', '血腥瑪莉', '長島冰茶', '愛爾蘭咖啡', '藍色夏威夷', '英式水果冰茶'];
+        var scores = [['姓名', '國文', '英文', '數學'], 
+                        ['王小美', 85, 88, 77], 
+                        ['孫大偉', 99, 86, 89], 
+                        ['張婷婷', 75, 92, 86]];
+        ;
+        for (var i = 0, s = ""; i < drinks.length; i++) 
+        {
+            s += `<tr><td>飲料${i+1}</td><td>${drinks[i]}</td></tr>`;
+        }
+        document.getElementById('drinks').innerHTML = s;
+        for (var i = 0, s = ""; i < scores.length; i++)
+        {
+            s += "<tr>"
+            for (let j = 0; j < scores[i].length; j++)
+            {
+                s += `<td>${scores[i][j]}</td>`;
+            }
+            s += "</tr>";
+        }
+        document.getElementById('scores').innerHTML = s;
+    </script>
+</body>
+</html>
