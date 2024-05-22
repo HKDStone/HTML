@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>20240327_1</title>
+	<style>
+		table{
+			margin : auto;
+			border: 1px gray solid;
+		}
+		th,td{
+			width: 100px;
+			padding: 10px;
+			text-align: center;
+			border: 1px gray solid;
+		}
+		thead,tfoot{
+			background: lightpink;
+		}
+		table,th,td{
+			border-collapse: collapse;
+		}
+
+		header{
+			margin: 10px;
+			text-align: center;
+			text-justify: auto;
+			font-size: 50px;
+			font-family:Arial;
+			font-weight: 500;
+		}
+	</style>
+</head>
+<body>
+	<header>資一C 課表</header>
+	<table border ="2">
+			<thead>
+			<tr>
+				<th>節次</th>
+				<th>時間</th>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>
+				<th>五</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<td id="cl">1</td>
+				<td>8:20<br>-<br>9:10</td>
+				<td rowspan="4"></td>
+				<td rowspan="2">資訊數學</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td id="cl">2</td>
+				<td>9:20<br>-<br>10:10</td>
+				<td rowspan="3"></td>
+				<td rowspan="3">程式設計</td>
+				<td rowspan="3">英文</td>
+			</tr>
+				<td id="cl">3</td>
+				<td>10:20 <br>-<br>11:10</td>
+		
+				<td rowspan="2">資訊網路通訊</td>
+	
+			</tr>
+			<tr>
+				<td id="cl">4</td>
+				<td>11:20<br>-<br>12:10</td>
+	
+			</tr>
+			<tfoot>
+				<td colspan="7">致理科技大學</td>
+			</tfoot>
+		</tbody>
+	</table>
+</body>
+</html>

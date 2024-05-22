@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11210360</title>
+    <style>
+        *{
+            color: blue;
+        }
+		table{
+			margin: auto;
+            border: solid black;
+        }
+
+		h3{
+			margin: auto;
+			text-align: center;
+		}
+		th,td,tr{
+			text-align: center;
+			padding: 10px;
+            
+		}
+		.style1{
+			color: blue;
+			background: yellow;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h3>丁思瑜的課表</h3>
+	<table border="1">
+		<tr class="style1">
+			<th></th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+		</tr>
+		<tr>
+			<th class="fi">第一節</th>
+			<td rowspan="3">班會</td>
+            <td rowspan="2">Linux</td>
+            <td>計概</td>
+		</tr>
+		<tr>
+            <th class="fi">第二節</th>
+            <td rowspan="2" class="all">網路</td>
+			
+		</tr>
+		<tr>
+            <th class="fi">第三節</th>
+			<td class="all">統計</td>
+		</tr>
+		<tr>
+			<th class="fi">第四節<br>~<br>第五節</th>
+			<td colspan="3">
+                <i>
+                    程式設計
+                </i>    
+            </td>
+		</tr>
+	</table>
+</html>

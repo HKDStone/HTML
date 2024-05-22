@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11210301</title>
+</head>
+<body>
+    <script>
+        print = (m) =>
+        {
+            document.write(m + "<br>")
+        }
+        print(Number.MAX_VALUE);
+        print(Number.MIN_VALUE);
+        //var v = prompt("請輸入數字");
+        //print(Number.parseInt(v));
+        var bd = "2005-05-29";
+        var fP = bd.indexOf('-');
+        var sP = bd.lastIndexOf('-');
+        print(bd.substring(fP+1,sP)+"月生");
+        var sarr = bd.split('-');
+        print(sarr[1]+"月生")
+    </script>
+</body>
+</html>

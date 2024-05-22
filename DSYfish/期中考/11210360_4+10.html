@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php">
+        <h1>大哥大調查表</h1>
+        <p>*姓 &nbsp;&nbsp;&nbsp;名： <input type="text"  name="userName" size="40" required value="我的名字"></p>
+        <p>請輸入密碼：<input type="text"></p>
+        <p>E-Mail： <input type="text" name="userMail" size="40" value="test@test.cc" pattern=".+@gmail.com"></p>
+        <p>*你使用過的門號<select name="userNumber[]" id="userNumber[]" size="4" multiple required>
+            <option value="中華電信">中華電信</option>
+            <option value="台灣大哥大">台灣大哥大</option>
+            <option value="遠傳">遠傳電信</option>
+            <option value="亞太">亞太電信</option>
+           
+        </select>
+        <p>請選擇你的收入：
+        <input type="radio" name="userAge" value="age1">3萬以下
+        <input type="radio" name="userAge" value="age2" checked>3萬~5萬以下
+        <input type="radio" name="userAge" value="age3">5萬~10萬以下
+        <input type="radio" name="userAge" value="age4">10萬以上</p>
+        <p>你遇過的問題?<br>
+            <textarea name="userTruble" id="" cols="45" rows="10">例如網路不夠快!</textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="清除">
+    </form>
+</body>
+</html>

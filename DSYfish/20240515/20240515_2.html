@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x =prompt("請輸入分數：","")
+        if (x>=80)
+            document.write("甲等");
+        else if (x>=60)
+            document.write("乙等");
+        else
+            document.write("丙等");
+        var y=  prompt("請輸入一個整數：","");
+        var total = 0;
+        for (var i = 1;i <= y; i++)
+        {
+            total += i
+        }
+        document.write("<br>1加到"+y +"="+total)
+        var answer =67;
+        var n = prompt("請輸入答案：","")
+        while (n != answer)
+        {
+            if (n > answer){
+                alert('太大')
+                n = prompt("請輸入答案:","")
+            }
+            else{
+                alert('太小')
+                n = prompt("請輸入答案:","")
+            }
+        }
+        alert('答對了');
+    </script>
+</body>
+</html>

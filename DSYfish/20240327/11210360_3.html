@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php">
+        <h1>調查表</h1>
+        <p>*姓 &nbsp;&nbsp;&nbsp;名： <input type="text"  name="userName" size="40" required></p>
+        <p>E-mail： <input type="text" name="userMail" size="40" value="" pattern=".+@gmail.com"></p>
+        <p>年&nbsp;&nbsp;&nbsp;齡：
+        <input type="radio" name="userAge" value="age1">未滿20歲
+        <input type="radio" name="userAge" value="age2" checked>20~29歲
+        <input type="radio" name="userAge" value="age3">30~39歲
+        <input type="radio" name="userAge" value="age4">40歲以上</p>
+        <p>使用過的手機廠牌：
+            <input type="checkbox" name="userPhone[]" value="hTC">hTC
+            <input type="checkbox" name="userPhone[]" value="Apple">Aplle
+            <input type="checkbox" name="userPhone[]" value="ASUS">ASUS
+            <input type="checkbox" name="userPhone[]" value="Samsung">Samsung
+        </p>
+        <p>常見問題<br>
+            <textarea name="userTruble" id="" cols="45" rows="4">電磁有問題</textarea>
+        </p>
+        <p>電信商<select name="userNumber[]" id="userNumber[]" size="4" multiple>
+            <option value="中華電信">中華電信</option>
+            <option value="台灣大哥大">台灣大哥大</option>
+            <option value="遠傳">遠傳</option>
+            <option value="亞太">亞太</option>
+           
+        </select>
+            
+        </p>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重設">
+
+
+
+    </form>
+    
+</body>
+</html>

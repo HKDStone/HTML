@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h2{
+    color: yellow;
+}
+
+h3,h4{
+    color: pink;
+}
+
+*{
+    padding: 20pt;
+    margin: 20pt;
+}
