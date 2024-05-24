@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+table{
+    background-color: #9e9a9a;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+tbody + tbody tr{
+    background-color: #e7e7e7;
+    height: 50px
+}
+.TableHead{
+    background: #c4bfbf;
+}
+
+input:invalid + span::after {
+    content: "✖";
+    padding-left: 5px;
+}
+  
+input:valid + span::after {
+    content: "✓";
+    padding-left: 5px;
+}
+input{
+    text-align: center;
+    width: 70%;
+    height: 2em; 
+}
+#item{
+    text-align: left;
+}
+select{
+    text-align: center;
+    height: 2em; 
+}
+button{
+    width: 80%;
+    padding: 3px;
+    font-size: 11pt;
+    font-weight: bolder;
+    line-height: 2;
+    border: 0;
+    border-radius: 3px;
+}
+button:hover{
+    mix-blend-mode: darken;
+}
+button:active{
+    transform: scale(0.9);
+}
+.add{
+    background-color: rgb(0, 195, 255);
+}
+.Del{
+    color: #ffffff;
+    background-color: rgb(216, 0, 0);
+}
+.print{
+    background-color: rgba(123, 255, 0, 0.486);
+}
+#total1{
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 5px;
+}

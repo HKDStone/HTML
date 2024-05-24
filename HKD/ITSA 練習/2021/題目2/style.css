@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    margin: 40px auto 30px auto;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    width: 500px;
+    min-height: 300px;
+    max-height: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px 6px rgb(167, 167, 167);
+}
+.above{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#EnterBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#incontent{
+    height: 30px;
+    width: 70%;
+    padding: 0 5px;
+}
+#send{
+    font-weight: bold;
+    font-size: large;
+    width: 10%;
+    margin: 0 0 0 5px;
+}
+#content{
+    width: 80%;
+    margin-top: 15px;
+    padding: 5px 5px 5px 5px;
+    min-height: 100px;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btns{
+    display: flex;
+    position:static;
+    width: 10px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    width: 40%;
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    font-weight: bolder;
+    color: red;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.btn + .btn{
+    margin-left: 10px;
+}
+#Alldel{
+    width: 50%;
+    height: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    display: none;
+}

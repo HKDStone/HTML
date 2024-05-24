@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>題目三</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1 style="margin-top: 5px;">來點什麼...</h1>
+            <table>
+                <tbody class="TableHead">
+                    <tr class="item">
+                        <td></td>
+                        <td>品名</td>
+                        <td>容量</td>
+                        <td>單價</td>
+                        <td>數量</td>
+                        <td>金額</td>
+                        <td>甜度</td>
+                        <td>溫度</td>
+                        <td>訂購人</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><button class="Add" onclick="AddToList()">確認</button></td>
+                        <td>
+                            <select id="item" onchange="update_content(this.value)">
+                                <option>請選擇...</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="size" onchange="update_price(this.value)">
+                                <option value="0">請選擇...</option>
+                            </select>
+                        </td>
+                        <td id="price">
+                            -
+                        </td>
+                        <td>
+                            <input id="nums" required type="number" min="1" max="100" value="1" onchange="update_total()" >
+                            <span class="validity"></span>
+                        </td>
+                        <td id="total">
+                            -
+                        </td>
+                        <td>
+                            <select id="sugar">
+                                <option value="0">請選擇...</option>
+                                <option>全糖</option>
+                                <option>8分糖</option>
+                                <option>5分糖</option>
+                                <option>3分糖</option>
+                                <option>1分糖</option>
+                                <option>無糖</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="ice">
+                                <option value="0">請選擇...</option>
+                                <option>熱</option>
+                                <option>全冰</option>
+                                <option>少冰</option>
+                                <option>去冰</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="name" type="text" maxlength="5" placeholder="ex:王小明">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="line-height: 3; margin-top: 20px;">訂購清單</h3>
+            <table>
+                <tbody class="TableHead">
+                    <tr class="item">
+                        <td></td>
+                        <td>品名</td>
+                        <td>容量</td>
+                        <td>單價</td>
+                        <td>數量</td>
+                        <td>金額</td>
+                        <td>甜度</td>
+                        <td>溫度</td>
+                        <td>訂購人</td>
+                    </tr>
+                </tbody>
+                <tbody id="Buyed_View">
+                    
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td style="width: 100px;"><button class="Del" onclick="Mult_Del()" >刪除勾選項</button></td>
+                        <td colspan="7" id="total1"></td>
+                        <td><button class="print" onclick="doc_print()" >結帳</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
