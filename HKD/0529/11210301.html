@@ -8,16 +8,16 @@
 <body>
     <form id="myform">
         <label for="username">姓名：</label>
-        <Input type="text" id="username" name="UserName"></Input>
-        <input type="submit">
+        <input type="text" id="username" name="UserName"></Input>
+        <input type="submit">       
     </form>
     <script>
         var mf = document.getElementById('myform');
         mf.addEventListener('submit', function(e){
-            if(!window.confirm("確定提交表單？"))
+            const n = document.getElementById('username').value;
+            if(!window.confirm(`姓名：${n}\n確定提交表單？`))
             e.preventDefault();
         }, false);
-        
     </script>
 </body>
 </html>

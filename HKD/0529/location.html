@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(var p in window.location){
+            document.write(`${p}:${window.location[p]}<br>`)
+        }
+        document.write(`<p> 歷程頁面數：${history.length} </p>`);
+    </script>
+</head>
+<body>
+    <a href="javascript: location.reload()">重新載入</a>
+    <a href="javascript: location.replace('https://www.google.com')">Google</a>
+    <a href="javascript: history.back()">上一頁</a>
+    <a href="javascript: history.forward()">下一頁</a>
+    <a href="javascript: history.go(3)">到第三頁</a>
+
+</body>
+</html>
