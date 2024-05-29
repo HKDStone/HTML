@@ -154,9 +154,10 @@ function doc_print() {
     var print = window.open('', '_blank', 'width=550,height=300');
   
     // 向新的視窗中插入內容
+    
     print.document.write('<html style="overflow-x: hidden;"><head><title>列印畫面</title><link rel="stylesheet" href="./style.css"></head><body>');
     print.document.write('<h2>訂購人：'+Buyed[0][6]+'</h3><br>');
-    print.document.write('<table style="background-color: #fff; width:500px"><tbody>')
+    print.document.write('<table border="1" style="background-color: #fff; width:500px"><tbody>')
     print.document.write('<tr style="line-height: 3;"><td></td><td>品名</td><td>容量</td><td>單價</td><td>數量</td><td>金額</td><td>甜度</td><td>溫度</td></tr>');
     var sum = 0;
     for (let i = 0; i < Buyed.length; i++) {
@@ -171,7 +172,7 @@ function doc_print() {
         '<td>'+Buyed[i][5]+'</td></tr>');
         sum += Buyed[i][3];
     }
-    print.document.write('<tr><td colspan="2" style="line-height: 3;text-align: left">合計:'+Buyed.length+'份'+sum+'元</td></tr>')
+    print.document.write('<tr><td colspan="8" style="line-height: 3;text-align: left">合計:'+Buyed.length+'份'+sum+'元</td></tr>')
     print.document.write('</tbody></table></body></html>');
     // 關閉文檔流，表示已經完成內容的輸入
     print.document.close();
