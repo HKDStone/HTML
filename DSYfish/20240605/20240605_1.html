@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn">顯示訊息</button>
+    <button type="button" id="btn2">顯示訊息2</button>
+    
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = showMsg;
+        btn.onclick = null;
+        var btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click',showMsg,false);
+        btn2.removeEventListener('click',showMsg,false);
+        
+
+        function showMsg(){
+            window.alert('Hello, world!');
+    }
+        
+    </script>
+</body>
+</html>
