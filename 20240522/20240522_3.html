@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('Random物件<br>')
+        for(var i =1;i <= 6;i++){
+            var no = Math.ceil(Math.random()*43)
+            document.write(no,'<br>')
+        }
+        document.write('<hr>DATE物件<br>')
+        var dt = new Date();
+        document.write(dt+"<br>");
+        document.write(dt.getMonth()+1+"/"+dt.getDate()+"/"+dt.getFullYear())
+        
+        
+        document.write('<hr>Array物件<br>')
+        var drinks = ['卡布奇諾咖啡', '拿鐵咖啡', '血腥瑪莉', '長島冰茶', 
+	    '愛爾蘭咖啡', '藍色夏威夷', '英式水果冰茶'];
+
+        document.write('<table border="1">');
+            for (var i = 0; i<drinks.length;i++){
+                document.write(`<tr><td>飲料${(i+1)}</td>`);
+                document.write(`<td>${drinks[i]}</td></tr>`);
+            }
+        document.write('</table>');
+        
+    </script>
+</body>
+</html>

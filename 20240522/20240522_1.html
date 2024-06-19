@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bmi(height,weight){
+            return weight/(height/100)**2;
+        }
+        var height = prompt("請輸入身高:","")
+        var weight = prompt("請輸入體重:","")
+        var v = bmi(height,weight);
+        
+        if(v < 18.5)
+            alert("過輕")
+        else if (v< 24)
+            alert("正常")
+        else 
+            alert("過重")
+    </script>
+
+
+</body>
+</html>

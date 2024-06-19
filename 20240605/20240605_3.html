@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="marquee();">
+    <form name="myForm">
+        <input type="text" name="myText" size="30">
+        <select name="mySelect" id="" size="1">
+            <option value="https://www.chihlee.edu.tw/">致理科大</option>
+            <option value="https://www.google.com.tw/">Google</option>
+            <option value="https://tw.yahoo.com">Yahoo</option>
+            <option value="https://www.bing.com">Bing</option>
+        </select>
+        <input type="button" value="Go!" onclick="javascript:GO();">
+    </form>
+    <script>
+        function GO(){
+            newWin = open();
+            newWin.location.href = document.myForm.mySelect.options[document.myForm.mySelect.selectedIndex].value;
+        }
+
+        var msg = "歡迎光臨致理科大~";
+        var interval = 200;
+        var index = 0;
+        function marquee(){
+            document.myForm.myText.value = msg.substring(index,msg.length)+msg.substring(0,msg.length);
+            index++;
+            if (index >msg.length) index=0;
+            window.setTimeout("marquee();",interval)
+        }
+    </script>
+</body>
+</html>

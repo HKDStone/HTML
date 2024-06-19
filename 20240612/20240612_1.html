@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(){
+            var id1 = document.getElementById("id1");
+            id1.innerHTML = "致理";
+            id1.style.color = "red";
+        }
+        function pic(){
+            var img1 = document.getElementById("img1");
+            img1.style.width = "300px";
+            // img1.style.visibility = "hidden"
+            window.alert("hello");
+        }
+    </script>
+</head>
+<body>
+
+    <h1 id="id1">Test</h1>
+    <button onclick="test()">控制1</button>
+    <button onclick="pic()">控制2</button>
+    <br>
+    <img src="rose.jpg" alt="" id="img1">
+</body>
+</html>
